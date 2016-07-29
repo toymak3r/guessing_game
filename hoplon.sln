@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{F71CB9F3-2A46-550E-5889-463789BC2DF4}") = "hoplon", "Assembly-CSharp-firstpass.csproj", "{939DE370-2494-9591-A98A-787F4F86796C}"
+EndProject
+Project("{F71CB9F3-2A46-550E-5889-463789BC2DF4}") = "hoplon", "Assembly-CSharp.csproj", "{A723B671-0210-A50E-EBAD-986189C3A8FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{939DE370-2494-9591-A98A-787F4F86796C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{939DE370-2494-9591-A98A-787F4F86796C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{939DE370-2494-9591-A98A-787F4F86796C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{939DE370-2494-9591-A98A-787F4F86796C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A723B671-0210-A50E-EBAD-986189C3A8FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A723B671-0210-A50E-EBAD-986189C3A8FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A723B671-0210-A50E-EBAD-986189C3A8FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A723B671-0210-A50E-EBAD-986189C3A8FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
