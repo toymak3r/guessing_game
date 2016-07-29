@@ -182,7 +182,7 @@ public class gamelogic : MonoBehaviour {
 		} else { 
 			this.question_category = "result";
 		}
-		statistics ();
+		//statistics ();
 	}
 
 	public void response(int value){
@@ -246,6 +246,7 @@ public class gamelogic : MonoBehaviour {
 				this.questions = new List<Question> (temp_question);
 			}
 		}
+		statistics ();
 	}
 
 	void ExitGame() {
