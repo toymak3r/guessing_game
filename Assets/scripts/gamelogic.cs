@@ -41,6 +41,7 @@ public class gamelogic : MonoBehaviour {
 	}
 
 	void Update () {
+		//statistics ();
 		
 	}
 
@@ -76,8 +77,6 @@ public class gamelogic : MonoBehaviour {
 			this.questions.Add (question);
 		}
 		this.fala.text = this.questions[this.question_index].description;
-		statistics ();
-
 	}
 
 	public void CheckResp(string category, int response){
@@ -175,14 +174,13 @@ public class gamelogic : MonoBehaviour {
 	}
 
 	public void NextQuestion(){
-		if (this.question_index + 1 < this.questions.Count) {
-			this.question_index++;
-			this.question_category = this.questions [this.question_index].category;
-			this.fala.text = this.questions[this.question_index].description;
+		if (question_index + 1 < questions.Count) {
+			question_index++;
+			question_category = questions[this.question_index].category;
+			fala.text = questions[this.question_index].description;
 		} else { 
-			this.question_category = "result";
+			question_category = "result";
 		}
-		//statistics ();
 	}
 
 	public void response(int value){
@@ -232,18 +230,18 @@ public class gamelogic : MonoBehaviour {
 				}
 				this.possibleAnimals = new List<Animal> (temp_animals);
 
-				foreach (Question question in questions) {
-					if (response == 1) {	
-						if (question.CompareTo (category)) {
-							temp_question.Remove (question);
-						}
-					} else {
-						if (!question.CompareTo (category)) {
-							temp_question.Remove (question);
-						}
-					}	
-				}
-				this.questions = new List<Question> (temp_question);
+//				foreach (Question question in questions) {
+//					if (response == 1) {	
+//						if (question.CompareTo (category)) {
+//							temp_question.Remove (question);
+//						}
+//					} else {
+//						if (!question.CompareTo (category)) {
+//							temp_question.Remove (question);
+//						}
+//					}	
+//				}
+//				this.questions = new List<Question> (temp_question);
 			}
 		}
 		statistics ();
